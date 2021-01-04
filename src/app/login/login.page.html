@@ -1,19 +1,34 @@
-<ion-header>
+<link
+  href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans&family=Pacifico&display=swap"
+  rel="stylesheet">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">Login </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-list>
-    <ion-item>
-      <ion-label position="floating">User Name</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-  </ion-list>
-  <ion-button expand="block" fill="solid" color="success" (click)="login()">Login</ion-button>
+<ion-content fullscreen="true">
+ 
+  <div class="ion-padding">
+    <form class="ion-padding">
+      <div class="wrap-input">
+        <input class="input" type="text" name="user-name" placeholder="User name">
+      </div>
+      <div class="wrap-input">
+        <input class="input" type="password" name="password" placeholder="Password">
+      </div>
+      <div class=" container-form-btn">
+        <button class="form-btn custom-font">
+          login
+        </button>
+      </div>
+    </form>
+  </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <p class="ion-text-center custom-font">Create an account?<a>Register</a> </p>
+  </ion-toolbar>
+</ion-footer>
