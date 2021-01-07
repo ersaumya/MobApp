@@ -1,3 +1,4 @@
+import { ComponentsModule } from './../../shared/components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,6 +14,7 @@ import { WelcomePage } from './welcome.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     WelcomePageRoutingModule
   ],
   declarations: [WelcomePage]
