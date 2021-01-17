@@ -17,7 +17,7 @@ export class SliderComponent implements OnInit {
   ngOnInit() {}
 
   gotoLogin(){
-    this.router.navigate(["login"]);
+    this.router.navigate(["register"]);
   }
 
 }
