@@ -1,69 +1,37 @@
-.custom-font {
-  font-family: "Josefin Sans", sans-serif;
-}
 ion-toolbar {
-  --background: transparent;
-
-  ion-title {
-    padding: 20px 0 46px 0;
-    font-weight: 700;
-  }
-
-  p {
-    padding: 40px 0 20px 0;
-    font-weight: 500;
+  background: #f5f5f3;
+  ion-button {
+    text-transform: initial;
+    font-size: 17px;
+    font-weight: 500px;
   }
 }
-
 ion-content {
-  --background: rgba(240, 240, 240);
+  background: #f5f5f3;
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    color: #010100;
+    margin-bottom: 10%;
+  }
+  #form {
+    margin-top: 15%;
+    padding-left: 30px;
+    padding-right: 30px;
 
-  form {
-    margin-top: 85px;
+    ion-button {
+      margin-top: 35px;
+      height: 45px;
+      font-size: 18px;
+      text-transform: initial;
+      border-radius: 50px;
+      box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.5);
+    }
   }
-  .wrap-input {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    margin-bottom: 26px;
-    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.12);
-  }
-
-  .input {
-    display: block;
-    width: 100%;
-    background: transparent;
-    font-family: Josefin Sans;
-    font-size: 16px;
-    line-height: 1.2;
-    border: none;
-    outline: none;
-    height: 40px;
-    padding: 0 20px 0 23px;
-  }
-  .container-form-btn {
-    display: flex;
-    justify-content: center;
-  }
-
-  .form-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    min-width: 160px;
-    height: 40px;
-    background-color: purple;
-    border-radius: 20px;
-    font-size: 14px;
-    color: #ffffff;
-    //text-transform: uppercase;
-    //padding-top: 5px;
-    transition: all 0.4s;
-    box-shadow: 0 10px 30px 0px rgba(67, 57, 82, 0.5);
-  }
-
-  .form-btn:hover {
-    background-color: #28333b;
-    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.8);
+  p {
+    text-align: center;
+    color: #b6b6b6;
+    margin-top: 40px;
   }
 }

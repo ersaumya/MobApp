@@ -1,33 +1,28 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title class="ion-text-center custom-font">Register</ion-title>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="arrow-back">
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login" color="primary">
+        Login
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true">
-  <div class="ion-padding">
-    <form class="ion-padding">
-      <div class="wrap-input">
-        <input class="input" type="text" name="user-name" placeholder="User name">
-      </div>
-      <div class="wrap-input">
-        <input class="input" type="text" name="email" placeholder="Email">
-      </div>
-      <div class="wrap-input">
-        <input class="input" type="password" name="password" placeholder="Password">
-      </div>
-      <div class="container-form-btn">
-        <button class="form-btn custom-font">
-          Register
-        </button>
-      </div>
-    </form>
-  </div>
-
+<ion-content>
+  <h1>Create your<br/>Account</h1>
+  <form id="form">
+    <app-input placeholder="Name"></app-input>
+    <app-input placeholder="Email"></app-input>
+    <app-input type="password" placeholder="Password"></app-input>
+    <ion-button expand="block" shape="round">
+      Join us
+    </ion-button>
+  </form>
+  <p>By pressing 'Join Us' you agree to<br />our terms & conditions.</p>
 </ion-content>
-
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <p class="ion-text-center custom-font">Already have an account?<a routerLink="/login">Login</a> </p>
-  </ion-toolbar>
-</ion-footer>
