@@ -9,6 +9,13 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
+        path: "feed",
+        loadChildren: () =>
+          import("../pages/feed/feed.module").then(
+            (m) => m.FeedPageModule
+          ),
+      },
+      {
         path: "settings",
         loadChildren: () =>
           import("../pages/settings/settings.module").then(
